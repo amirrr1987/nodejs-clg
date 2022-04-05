@@ -1,6 +1,14 @@
+import { fileURLToPath, URL } from "url";
+
 export default function logger(data) {
   console.debug(
     "--------------------- Start log ------------------------------"
+  );
+  // console.log("%cName is : " + `%cname   `, "color: blue;", "color: red;");
+  console.log(
+    "%cFile is: " + `%c${fileURLToPath(new URL(import.meta.url))}`,
+    "color: blue;",
+    "color: red;"
   );
   console.log(
     "%cType is : " + `%c${typeof data}   `,
