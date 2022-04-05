@@ -1,5 +1,5 @@
 export default function logger(data) {
-  console.timeEnd(
+  console.debug(
     "--------------------- Start log ------------------------------"
   );
   console.log(
@@ -24,7 +24,5 @@ export default function logger(data) {
   console.log("%cdata return  : ", "color: blue;");
   console.dir(data);
 
-  console.timeEnd(
-    "--------------------- End log ------------------------------"
-  );
+  console.debug("--------------------- End log ------------------------------");
 }
