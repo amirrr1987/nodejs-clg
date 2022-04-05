@@ -1,6 +1,6 @@
 export default function logger(data) {
-  console.log(
-    "--------------------- Amir Maghami ------------------------------"
+  console.timeEnd(
+    "--------------------- Start log ------------------------------"
   );
   console.log(
     "%cType is : " + `%c${typeof data}   `,
@@ -22,8 +22,9 @@ export default function logger(data) {
     );
   }
   console.log("%cdata return  : ", "color: blue;");
-  console.log(data);
-  console.log(
-    "--------------------- Amir Maghami ------------------------------"
+  console.dir(data);
+
+  console.timeEnd(
+    "--------------------- End log ------------------------------"
   );
 }
