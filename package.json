@@ -26,5 +26,8 @@
     "url": "https://github.com/amirrr1987/console-data/issues"
   },
   "type": "module",
-  "homepage": "https://github.com/amirrr1987/console-data#readme"
+  "homepage": "https://github.com/amirrr1987/console-data#readme",
+  "devDependencies": {
+    "chalk": "^5.0.1"
+  }
 }
