@@ -4,7 +4,8 @@
   "description": "JavaScript Console logger",
   "main": "logger.js",
   "scripts": {
-    "start": "node logger.js"
+    "start": "node logger.js",
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -31,5 +32,8 @@
     "chalk": "^5.0.1",
     "path": "^0.12.7",
     "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
   }
 }
