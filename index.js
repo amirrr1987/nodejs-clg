@@ -1,4 +1,5 @@
-import logger from './logger.js';
+const { mode ,logger } = require('./logger.js');
 
 
-logger(['a', 'b', 'c']);
+mode('dev');
+logger(['hello', 'world'])
