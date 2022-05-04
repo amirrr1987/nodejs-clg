@@ -1,22 +1,39 @@
-import { fileURLToPath, URL } from "url";
-import path from 'path'
-import chalk from 'chalk';
+const { fileURLToPath, URL } = require("url");
+const path = require('path');
+const chalk = require('chalk');
 
 const currentPath = fileURLToPath(new URL(import.meta.url))
 const fileName = path.basename(currentPath)
 
-const logger = (data) => {
-  console.log(chalk.magentaBright("--------------------- Start log ------------------------------"));
-  console.log(chalk.cyanBright(`- File name is: `), chalk.redBright(fileName))
-  console.log(chalk.cyanBright(`- File location is: `), chalk.redBright(currentPath))
-  console.log(chalk.cyanBright(`- Type is : `), chalk.redBright(typeof data))
-  console.log(chalk.cyanBright(`- Is this an Array?`), chalk.redBright(Array.isArray(data) ? true : false))
-  if (Array.isArray(data) === true) {
-    console.log(chalk.cyanBright(`- Array Length: `), chalk.redBright(data.length))
-  }
-  console.log(chalk.cyanBright(`- Data return  : `))
-  console.dir(data);
-  console.log(chalk.magentaBright("---------------------  End log  ------------------------------"));
-}
+export const status = 'development';
 
-export default logger
+
+consoleLog = (...values) => {
+  if (status === "development") {
+    console.log(...values);
+  } else {
+    console.log(chalk.magentaBright("Sorry we are in production mode.."));
+  }
+};
+consoleDir = (...values) => {
+  if (status === "development") {
+    console.dir(...values);
+  } else {
+    console.log(chalk.magentaBright("Sorry we are in production mode.."));
+  }
+};
+
+
+export const logger = (data) => {
+  consoleLog(chalk.magentaBright("--------------------- Start log ------------------------------"));
+  consoleLog(chalk.cyanBright(`- File name is: `), chalk.redBright(fileName))
+  consoleLog(chalk.cyanBright(`- File location is: `), chalk.redBright(currentPath))
+  consoleLog(chalk.cyanBright(`- Type is : `), chalk.redBright(typeof data))
+  consoleLog(chalk.cyanBright(`- Is this an Array?`), chalk.redBright(Array.isArray(data) ? true : false))
+  if (Array.isArray(data) === true) {
+    consoleLog(chalk.cyanBright(`- Array Length: `), chalk.redBright(data.length))
+  }
+  consoleLog(chalk.cyanBright(`- Data return  : `))
+  consoleDir(data);
+  consoleLog(chalk.magentaBright("---------------------  End log  ------------------------------"));
+}

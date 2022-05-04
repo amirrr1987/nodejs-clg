@@ -1,11 +1,11 @@
 {
-  "name": "console-data",
-  "version": "0.0.7",
-  "description": "JavaScript Console logger",
+  "name": "nodejs-clg-data",
+  "version": "0.0.10",
+  "description": "Node.js advanced console log",
   "main": "logger.js",
   "scripts": {
     "start": "node logger.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon logger.js"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,7 @@
   "bugs": {
     "url": "https://github.com/amirrr1987/console-data/issues"
   },
-  "type": "module",
+  "type": "commonjs",
   "homepage": "https://github.com/amirrr1987/console-data#readme",
   "dependencies": {
     "chalk": "^5.0.1",
