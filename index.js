@@ -1,5 +1,7 @@
-const { mode ,logger } = require('./logger.js');
+const { isDevelopMode, logger } = require("./logger.js");
 
+isDevelopMode(true);
 
-mode('dev');
-logger(['hello', 'world'])
+const foo = [{ name: "foo", age: 32, active: true }];
+
+logger(foo);
