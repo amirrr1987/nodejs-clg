@@ -1,8 +1,11 @@
 const { isDevelopMode, logger } = require("./logger");
 
+let foo = [{ a: 1, name: 34 }, { a: 2 }, { a: 3 }, { a: 4 }];
 
 
+isDevelopMode(true)
 
-test("adds 1 + 2 to equal 3", () => {
-  expect(logger()).toBe(Array);
+
+it('console.log the "foo"', () => {
+  expect(logger(foo))
 });
