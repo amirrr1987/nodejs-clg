@@ -43,13 +43,7 @@ Install via **npm**
   
 
 ``` javascript
-
-  
-
 npm i -D nodejs-clg
-
-  
-
 ```
 
   
