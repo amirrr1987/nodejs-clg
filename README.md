@@ -58,7 +58,7 @@ npm i -D nodejs-clg
 
 ``` javascript
 
-const { isDevelopMode, logger } =  require("./logger.js");
+const { isDevelopMode, logger } =  require("logger.js");
 
 isDevelopMode(true);
 
