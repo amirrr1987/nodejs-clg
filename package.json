@@ -1,6 +1,6 @@
 {
   "name": "nodejs-clg",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Node.js advanced console log",
   "main": "logger.js",
   "scripts": {
@@ -10,13 +10,29 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amirrr1987/console-data.git"
+    "url": "git+https://github.com/amirrr1987/nodejs-clg.git"
   },
   "keywords": [
     "console log",
     "log",
     "debugger",
-    "check error"
+    "check error",
+    "console",
+    "log",
+    "nodejs",
+    "logger",
+    "commonjs",
+    "expressjs",
+    "nestjs",
+    "debug",
+    "debugger",
+    "debugging",
+    "logging",
+    "development",
+    "development-tools",
+    "js",
+    "javascript",
+    "dev-tools"
   ],
   "author": {
     "email": "maghami.a1987@gmail.com",
@@ -25,10 +41,10 @@
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/amirrr1987/console-data/issues"
+    "url": "https://github.com/amirrr1987/nodejs-clg/issues"
   },
   "type": "commonjs",
-  "homepage": "https://github.com/amirrr1987/console-data#readme",
+  "homepage": "https://github.com/amirrr1987/nodejs-clg#readme",
   "dependencies": {
     "chalk": "^4.1.0",
     "path": "^0.12.7",
